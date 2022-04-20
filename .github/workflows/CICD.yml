@@ -19,15 +19,15 @@ jobs:
       run: sudo apt-get install dotnet-sdk-6.0
         
     - name: Install dependencies
-      working-directory: /home/runner/work/OwnWebSite/OwnWebSite
+      working-directory: /home/runner/work/OwnWebSite/OwnWebSite/Website
       run: dotnet restore
     
     - name: Build
-      working-directory: /home/runner/work/OwnWebSite/OwnWebSite
+      working-directory: /home/runner/work/OwnWebSite/OwnWebSite/Website
       run: dotnet build --configuration Release --no-restore
     
     - name: Test
-      working-directory: /home/runner/work/OwnWebSite/OwnWebSite
+      working-directory: /home/runner/work/OwnWebSite/OwnWebSite/Website
       run: dotnet test --no-restore --verbosity normal
 
   Continuous_delivery:
