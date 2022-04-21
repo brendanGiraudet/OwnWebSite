@@ -2,8 +2,6 @@
 
 FROM nginx:alpine AS base
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
 EXPOSE 4043
 
 FROM emscripten/emsdk:3.0.1 AS build
