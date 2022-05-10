@@ -20,3 +20,9 @@
 .logo img {
   width: 9rem;
 }
+
+@media screen and (min-width: 600px) {
+  .icons {
+    display: none;
+  }
+}

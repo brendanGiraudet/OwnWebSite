@@ -24,3 +24,11 @@
         width: 9rem;
     }
 } 
+
+
+/////// DESKTOP ///////
+@media screen and (min-width : 600px) {
+    .icons{
+        display: none;
+    }
+}
