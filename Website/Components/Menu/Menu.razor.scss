@@ -1,8 +1,26 @@
 @import "../../scss/graphical_charter.scss";
 
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: $yellow;
+    padding: 1rem;
+    border-bottom: 2px solid $orange;
+}
+
+.icons{
+    display: flex;
+}
+
 .icon{
+    margin-left: 1rem;
     svg{
         fill: $brown;
     }
 }
 
+.logo{
+    img{
+        width: 9rem;
+    }
+} 

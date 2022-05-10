@@ -1,3 +1,22 @@
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: #cbb474;
+  padding: 1rem;
+  border-bottom: 2px solid #9c6611;
+}
+
+.icons {
+  display: flex;
+}
+
+.icon {
+  margin-left: 1rem;
+}
 .icon svg {
   fill: #3a2a00;
+}
+
+.logo img {
+  width: 9rem;
 }
