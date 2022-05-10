@@ -15,14 +15,24 @@
 }
 .icon svg {
   fill: #3a2a00;
+  height: 3rem;
+  width: 3rem;
 }
 
 .logo img {
   width: 9rem;
 }
 
+.search-bar, .about-icon {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   .icons {
     display: none;
+  }
+
+  .search-bar, .about-icon {
+    display: block;
   }
 }

@@ -1,0 +1,9 @@
+@import "../../scss/graphical_charter.scss";
+
+.input{
+    input{
+        border-radius: 9px;
+        border: 2px solid $orange;
+        color: $brown;
+    }
+}
