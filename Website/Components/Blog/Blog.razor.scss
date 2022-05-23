@@ -1,0 +1,21 @@
+@import "../../scss/graphical_charter.scss";
+
+.blog {
+    border-radius: $border-radius-size;
+    border: 2px solid $orange;
+    color: $brown;
+    margin: 1rem;
+    max-width: $max-width;
+    padding: 1rem;
+
+    .blog-title{
+        text-align: center;
+        border-bottom: 1px solid $orange;
+        padding: .5rem;
+    }
+
+    .blog-content{
+        padding: 1rem;
+        word-break: break-word;
+    }
+}

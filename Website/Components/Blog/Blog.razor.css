@@ -1,0 +1,17 @@
+.blog {
+  border-radius: 9px;
+  border: 2px solid #9c6611;
+  color: #3a2a00;
+  margin: 1rem;
+  max-width: 30rem;
+  padding: 1rem;
+}
+.blog .blog-title {
+  text-align: center;
+  border-bottom: 1px solid #9c6611;
+  padding: 0.5rem;
+}
+.blog .blog-content {
+  padding: 1rem;
+  word-break: break-word;
+}
