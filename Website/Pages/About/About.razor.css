@@ -1,0 +1,38 @@
+.about-page {
+  margin: 2rem;
+}
+.about-page .about-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+.about-page .about-image {
+  max-width: 17rem;
+  max-height: 15rem;
+}
+.about-page .about-image img {
+  width: 100%;
+  height: 100%;
+}
+.about-page .about-text {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .about-page .about-section {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .about-page .about-text {
+    margin-left: 3rem;
+  }
+
+  .about-page .reverse-row {
+    flex-direction: row-reverse;
+  }
+  .about-page .reverse-row .about-text {
+    margin-left: 0;
+    margin-right: 3rem;
+  }
+}
