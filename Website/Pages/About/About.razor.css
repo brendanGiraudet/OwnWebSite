@@ -6,23 +6,35 @@
   flex-wrap: wrap;
   margin-bottom: 3rem;
   align-items: center;
+  justify-content: center;
 }
-.about-page .about-image {
+.about-page .about-section .about-image {
   max-width: 17rem;
   max-height: 15rem;
 }
-.about-page .about-image img {
+.about-page .about-section .about-image img {
   width: 100%;
   height: 100%;
 }
-.about-page .about-text {
+.about-page .about-section .about-image svg {
+  width: 13rem;
+  fill: #3a2a00;
+}
+.about-page .about-section .about-text {
   margin-top: 1rem;
+}
+.about-page .about-section:not(.about-section:first-child) {
+  border-top: 1px solid #9c6611;
 }
 
 @media screen and (min-width: 900px) {
+  .about-page {
+    margin: 3rem 5rem;
+  }
   .about-page .about-section {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .about-page .about-text {
     margin-left: 3rem;
