@@ -6,13 +6,29 @@
     .about-section{
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+
+        .about-title{
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: $brown;
+        }
+
+        .about-content{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
 
         .about-image{
-            max-width: 17rem;
-            max-height: 15rem;
+            max-width: 12rem;
+            max-height: 12rem;
+            margin-bottom: 1rem;
     
             img{
                 width: 100%;
@@ -20,7 +36,7 @@
             }
     
             svg{
-                width: 13rem;
+                width: 12rem;
                 fill: $brown; 
             }
         }
@@ -39,25 +55,40 @@
 /////// DESKTOP ///////
 @media screen and (min-width : 900px) {
     .about-page{
-        margin: 3rem 5rem;
+        margin: 3rem 10rem;
     
         .about-section{
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-        }
-    
-        .about-text{
-            margin-left: 3rem;
-        }
-    }
-    .about-page .reverse-row{
-        flex-direction: row-reverse;
+        
+            .about-content{
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                flex-direction: row;
+                width: 100%;
+            }
 
-        .about-text{
-            margin-left: 0;
-            margin-right: 3rem;
+            .about-content.about-content-technology{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .about-image{
+                margin-right: 1rem;
+            }
+        
+            .about-text{
+                margin-left: 3rem;
+            }
+
+            .about-content.reverse-row{
+                flex-direction: row-reverse;
+        
+                .about-text{
+                    margin-left: 0;
+                    margin-right: 3rem;
+                }
+            }
         }
     }
-    
 }
